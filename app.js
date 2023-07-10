@@ -84,7 +84,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use("/api", myiq_route);
 
-app.listen(4000, function (err) {
+app.listen(80, function (err) {
   if (err) {
     console.error(err);
   } else {
