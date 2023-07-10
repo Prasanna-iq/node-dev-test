@@ -2,7 +2,7 @@
 mkdir /root/nodejs-service
 
 sudo chmod -R 777 /root/
-sudo yum update  
+sudo apt update  
 curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
-sudo yum install nodejs -y
-sudo npm install pm2 -g
+sudo apt install nodejs -y
+sudo apt install pm2 -g
