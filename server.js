@@ -102,7 +102,7 @@ app.listen(80, function (err) {
 
 app.get("/", (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.write(JSON.stringify("MyIQ.AI api service is running on dev!!!"));
+  res.write(JSON.stringify("MyIQ.AI api service is running on dev and it works with the CICD!!!"));
   res.end();
 });
 
