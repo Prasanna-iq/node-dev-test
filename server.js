@@ -84,7 +84,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use("/api", myiq_route);
 
-app.listen(80, function (err) {
+app.listen(400, function (err) {
   if (err) {
     console.error(err);
   } else {
@@ -102,7 +102,7 @@ app.listen(80, function (err) {
 
 app.get("/", (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.write(JSON.stringify("MyIQ.AI api service is running on dev and it works with the CICD!!!"));
+  res.write(JSON.stringify("MyIQ.AI api service is running on dev. testing with Praveen!!!"));
   res.end();
 });
 
